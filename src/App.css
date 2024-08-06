@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+/* Container */
+.container {
+  padding: 50px;                      /* Space from top */
+  max-width: 400px;                   /* Width of container */
+  margin: auto;                       /* Automatic margin control */
+  font-family: Arial, Helvetica, sans-serif;     /* Font */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Application Title */
+.title {
+  font-size: 50px;                    /* Size Font */
+  font-weight: bold;                  /* Font Style */
+  margin-bottom: 20px;                /* Margin space */
+  text-align: center;                 /* Alignment */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Textbox */
+.input {
+  width: calc(100% - 50px);           /* Position using calc method */
+  padding: 8px;                       /* Size of textbox */
+  margin-bottom: 10px;                /* Margin sapce */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Buttons */
+button {
+  margin: 5px;                        /* margin space */
+  background-color: #000000;        /* button color */
+  color: white;                     /* Text color */
+  padding: 10px 15px;                 /* Distance from button label to border */
 }
 
-.App-link {
-  color: #61dafb;
+/* Disabled button */
+button:disabled {
+  background-color: #777777;           /* Shadow button */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Added Task */
+.task {
+  justify-content: space-between;     /* alignment */
+  align-items: center;                /* Alignment */
+  padding: 15px;                          /* Padding */
+  border-bottom: 1px solid #000000;    /* Seperator */
+}
+
+/* Finished Task */
+.doneTask {
+  text-decoration: line-through;      /* Text Effect */
+  color: gray;                      /* Make button grey */
 }
